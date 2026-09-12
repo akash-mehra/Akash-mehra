@@ -10,7 +10,7 @@ operational execution: hands-on patient care across high-volume and under-resour
 settings, a research background that reaches into space science, and a working technical
 practice that keeps me fluent in the systems reshaping medicine.
 
-**→ [akash-mehra.github.io](https://akash-mehra.github.io)**
+**→ [akash-mehra.github.io/Akash-mehra](https://akash-mehra.github.io/Akash-mehra/)**
 
 ---
 
@@ -56,7 +56,7 @@ professionals — particularly where clinical practice, research and engineering
 meet and nobody has done the translation yet.
 
 - **Email** — [singh.akash0717@gmail.com](mailto:singh.akash0717@gmail.com)
-- **LinkedIn** — [/in/akash-mehra](https://www.linkedin.com/in/akash-mehra)
+- **LinkedIn** — [/in/akash-mehra-a54a2319a](https://www.linkedin.com/in/akash-mehra-a54a2319a)
 - **GitHub** — [@akash-mehra](https://github.com/akash-mehra)
 
 ---

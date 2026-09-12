@@ -15,7 +15,7 @@ verbatim by the user on 2026-09-12. Nothing here is inferred or embellished.
 **Name:** Dr. Akash Mehra
 **Email:** singh.akash0717@gmail.com
 **GitHub:** akash-mehra
-**LinkedIn:** URL not yet supplied — placeholder in markup, flagged to the user.
+**LinkedIn:** https://www.linkedin.com/in/akash-mehra-a54a2319a
 
 **Positioning (his words, condensed):** A dedicated medical professional driven by a dual
 passion for robust clinical practice, research innovation, and healthcare leadership.
@@ -82,7 +82,8 @@ The through-line stated plainly: **the same curiosity, at three scales.**
 ## Constraints and non-negotiables
 
 - **Zero build step.** Static files at repo root, GitHub Pages, publishing to
-  akash-mehra.github.io. No bundler, no npm install, no CI.
+  https://akash-mehra.github.io/Akash-mehra/ — a subpath, because the repo is named `Akash-mehra`
+  rather than `akash-mehra.github.io`, so every asset path must stay relative.
 - **One runtime dependency:** three.js from CDN, pinned, with SRI. Everything else is
   native platform — no GSAP, no scroll library, no animation framework.
 - **Photography is real or absent.** Four portraits exist (white coat / stethoscope;
