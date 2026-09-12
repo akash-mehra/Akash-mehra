@@ -84,7 +84,6 @@ The through-line stated plainly: **the same curiosity, at three scales.**
 - **Zero build step.** Static files at repo root, GitHub Pages, publishing to
   https://akash-mehra.github.io/Akash-mehra/ — a subpath, because the repo is named `Akash-mehra`
   rather than `akash-mehra.github.io`, so every asset path must stay relative.
-  A single workflow publishes it; it compiles nothing, it only copies.
 - **One runtime dependency:** three.js from CDN, pinned, with SRI. Everything else is
   native platform — no GSAP, no scroll library, no animation framework.
 - **Photography is real or absent.** Four portraits exist (white coat / stethoscope;
