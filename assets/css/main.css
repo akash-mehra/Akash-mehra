@@ -444,12 +444,28 @@ main{position:relative;z-index:2}
 
 .plate{margin:0;position:relative}
 
+/* Plates are framed and held slightly back at rest, so a bright photograph
+   sits inside the dark world instead of punching a hole in it. Full colour
+   returns on hover; the rest state has to stand on its own for touch.      */
 .plate img{
   width:100%;
-  filter:grayscale(.28) contrast(1.06) brightness(.94);
-  transition:filter 700ms var(--ease),transform 900ms var(--ease);
+  filter:grayscale(.34) contrast(1.05) brightness(.86);
+  transition:filter 700ms var(--ease);
 }
-.plate:hover img{filter:grayscale(0) contrast(1.02) brightness(1)}
+.plate:hover img,.plate:focus-within img{filter:grayscale(0) contrast(1.02) brightness(1)}
+
+/* The frame overlays the image cell exactly, whatever the photograph's
+   aspect ratio, by sharing a grid area with it rather than guessing one. */
+.plate:not(.is-absent){display:grid;grid-template-rows:auto auto}
+.plate:not(.is-absent) img{grid-area:1/1}
+.plate:not(.is-absent) figcaption{grid-area:2/1}
+.plate:not(.is-absent)::after{
+  content:"";
+  grid-area:1/1;
+  pointer-events:none;
+  box-shadow:inset 0 0 0 1px rgba(237,237,242,.10),
+             inset 0 -70px 70px -70px rgba(5,5,7,.92);
+}
 
 .plate figcaption{
   display:flex;gap:.9rem;align-items:baseline;flex-wrap:wrap;

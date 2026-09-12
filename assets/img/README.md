@@ -1,22 +1,27 @@
 # Photography
 
-Drop your four portraits in here using **exactly these filenames**. Nothing else is
-needed — the page picks them up automatically, and until a file exists that plate renders
-a designed "awaiting plate" state rather than a broken image.
+The four portraits are in place. Each was resized to 1200px on the long edge, stripped of
+metadata and encoded as WebP; the page reserves each one's exact intrinsic size so nothing
+shifts as they load. If a file is ever missing, that plate falls back to a designed
+"awaiting plate" state rather than a broken image.
 
 | Filename | Where it appears | The photograph |
 |---|---|---|
-| `plate-01-clinical.jpg`  | Act III — clinical practice | White coat, stethoscope, against the pale wall |
-| `plate-02-studio.jpg`    | Masthead                    | Black-and-white studio portrait, suit and turtleneck |
-| `plate-03-altitude.jpg`  | Act I — research            | Leather jacket, Himalayan snowline behind you |
-| `plate-04-field.jpg`     | Close                       | With friends in the forest stream |
+| `plate-01-clinical.webp` | Act III — clinical practice | White coat, stethoscope, against the pale wall |
+| `plate-02-studio.webp`   | Masthead                    | Black-and-white studio portrait, suit and turtleneck |
+| `plate-03-altitude.webp` | Act I — research            | Leather jacket, Himalayan snowline behind you |
+| `plate-04-field.webp`    | Close                       | With friends in the forest stream |
 
-## Preparation
+## Replacing one
 
-- **Format** — `.jpg`. If you'd rather ship `.webp` or `.avif`, change the `src` in
-  `index.html` to match; nothing else references these paths.
-- **Size** — roughly 1400px on the long edge is plenty. The largest slot renders at about
-  560 CSS pixels, so anything beyond ~1600px is wasted bytes on a phone.
+- **Format** — WebP. To use a different format, change the matching `src` in `index.html`;
+  nothing else references these paths.
+- **Size** — 1200px on the long edge. The largest slot renders at about 545 CSS pixels, so
+  that still covers a 2x display with nothing wasted. Update the `width`/`height`
+  attributes on the `<img>` to the real pixel size, or the page will reserve the wrong
+  space and the layout will jump as it loads.
+- **Quality** — q82 suits the portraits. The field photograph is q70: dense foliage is
+  expensive to encode and that is where the size/quality curve flattens.
 - **Orientation** — all four are portrait or near-square in the layout. Plates 01 and 03
   are framed 3:4; plates 02 and 04 sit in wider wells. Any aspect ratio will work — the
   image is never cropped by the layout, the well adapts.
