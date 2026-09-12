@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Akash Mehra — physician, researcher, programmer</title>
+<meta name="description" content="Dr. Akash Mehra — House Surgeon, researcher and programmer. Clinical practice across orthopaedics and rural primary care, research at the Indian Space Lab, and a working interest in software, hardware and drone systems.">
+<meta name="author" content="Akash Mehra">
+<meta name="theme-color" content="#050507">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr. Akash Mehra">
+<meta property="og:description" content="One curiosity, across twenty-five orders of magnitude. Physician, researcher, programmer.">
+<meta property="og:site_name" content="Akash Mehra">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23050507'/%3E%3Ccircle cx='16' cy='16' r='6.5' fill='%23000'/%3E%3Cellipse cx='16' cy='16' rx='12.5' ry='3.4' fill='none' stroke='%23FF6B2C' stroke-width='1.6'/%3E%3C/svg%3E">
+
+<link rel="preload" href="assets/fonts/instrument-serif-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/instrument-serif-400i.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/archivo-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/main.css">
+<link rel="modulepreload" href="assets/js/stage.js">
+<script>document.documentElement.className=document.documentElement.className.replace('no-js','js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ───────────────────────── stage: the continuous dolly ───────────────────────── -->
+<div class="stage" aria-hidden="true">
+  <canvas id="gl" class="stage__gl"></canvas>
+  <div class="stage__fallback" id="fallback">
+    <div class="fallback__disc"></div>
+    <div class="fallback__hole"></div>
+  </div>
+  <div class="stage__scrim"></div>
+  <div class="stage__grain"></div>
+  <div class="stage__vignette"></div>
+</div>
+
+<!-- ───────────────────────── the magnitude rail ───────────────────────── -->
+<aside class="rail" aria-hidden="true">
+  <div class="rail__head">
+    <span class="rail__key">scale</span>
+    <span class="rail__value"><span id="mantissa">2.50</span>&#8239;&times;&#8239;10<sup id="exponent">20</sup>&#8239;m</span>
+  </div>
+  <div class="rail__ladder">
+    <div class="rail__track"><div class="rail__fill" id="railFill"></div></div>
+    <ol class="rail__stops">
+      <li class="rail__stop is-active" data-stop="0"><span>galactic core</span></li>
+      <li class="rail__stop" data-stop="1"><span>event horizon</span></li>
+      <li class="rail__stop" data-stop="2"><span>circuit trace</span></li>
+      <li class="rail__stop" data-stop="3"><span>capillary lumen</span></li>
+    </ol>
+  </div>
+  <div class="rail__phase"><span class="rail__key">phase</span> <span id="phaseName">approach</span></div>
+</aside>
+
+<main id="main">
+
+  <!-- ───────── masthead ───────── -->
+  <section class="act act--masthead" data-act="0">
+    <div class="wrap">
+      <header class="masthead">
+        <h1 class="masthead__name">
+          <span class="masthead__given"><span class="masthead__hon">Dr.</span>Akash</span>
+          <span class="masthead__family">Mehra</span>
+        </h1>
+        <p class="masthead__lede">
+          I am a physician. I am also the person who needs to know how the thing works &mdash;
+          whether that thing is a collapsing star, a flight controller, or a human joint.
+        </p>
+        <dl class="masthead__meta">
+          <div><dt>practice</dt><dd>House Surgeon</dd></div>
+          <div><dt>research</dt><dd>Indian Space Lab</dd></div>
+          <div><dt>building</dt><dd>Software &middot; hardware &middot; drones</dd></div>
+        </dl>
+      </header>
+
+      <figure class="plate plate--portrait" data-plate="02">
+        <img src="assets/img/plate-02-studio.jpg" alt="Studio portrait of Dr. Akash Mehra in a suit and turtleneck." width="864" height="1152" loading="eager" decoding="async">
+        <figcaption><span class="plate__no">Plate 02</span><span class="plate__desc">Studio &mdash; monochrome</span></figcaption>
+      </figure>
+    </div>
+
+    <p class="scroll-cue"><span class="scroll-cue__bar"></span>Descend</p>
+  </section>
+
+  <!-- ───────── act I ───────── -->
+  <section class="act act--i" data-act="1" aria-labelledby="act1-h">
+    <div class="wrap">
+      <p class="act__mark"><span>I</span> Event horizon <em>1.27&#8239;&times;&#8239;10<sup>10</sup>&#8239;m</em></p>
+
+      <h2 class="act__head" id="act1-h">Research begins exactly where intuition gives out.</h2>
+
+      <div class="act__body">
+        <p>
+          I spent a summer at the <strong>Indian Space Lab</strong> on a competitive research
+          internship, working on high-level scientific inquiry and complex research
+          methodologies. Nothing at that scale can be reasoned about by feel. You build the
+          method first, you make it survive contact with the data, and you let it tell you
+          what is true.
+        </p>
+        <p>
+          That is not a different discipline from medicine. It is the same discipline at a
+          different order of magnitude, which is the whole argument this page is making.
+        </p>
+      </div>
+
+      <dl class="record">
+        <div><dt>Appointment</dt><dd>Summer Research Intern</dd></div>
+        <div><dt>Institution</dt><dd>Indian Space Lab</dd></div>
+        <div><dt>Selection</dt><dd>Competitive</dd></div>
+        <div><dt>Focus</dt><dd>Scientific inquiry &middot; research methodology</dd></div>
+      </dl>
+
+      <figure class="plate plate--wide" data-plate="03">
+        <img src="assets/img/plate-03-altitude.jpg" alt="Dr. Akash Mehra standing before a snow-covered Himalayan ridgeline." width="1500" height="2000" loading="lazy" decoding="async">
+        <figcaption><span class="plate__no">Plate 03</span><span class="plate__desc">Altitude &mdash; Himalayan snowline</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ───────── act II ───────── -->
+  <section class="act act--ii" data-act="2" aria-labelledby="act2-h">
+    <div class="wrap">
+      <p class="act__mark"><span>II</span> Circuit trace <em>1.50&#8239;&times;&#8239;10<sup>&minus;4</sup>&#8239;m</em></p>
+
+      <h2 class="act__head" id="act2-h">Then I wanted to build one.</h2>
+
+      <div class="act__body">
+        <p>
+          I am an avid programmer, and what holds my attention is the seam: the place
+          where software stops being abstract and starts moving a physical thing. Clinical
+          insight and technical logic turn out to be the same reflex: isolate the variable,
+          reproduce the fault, do not trust a story that the measurement contradicts.
+        </p>
+        <p>
+          It is why I follow <strong>drone systems</strong> closely. Autonomous flight is the
+          cleanest case of code, sensors and hardware having to agree in real time, at a
+          frequency where nothing can be hand-waved and the interface is never theoretical.
+        </p>
+      </div>
+
+      <dl class="record">
+        <div><dt>Practice</dt><dd>Programming &mdash; software / hardware interface</dd></div>
+        <div><dt>Active interest</dt><dd>Drone technology &middot; autonomous flight</dd></div>
+        <div><dt>Method</dt><dd>Clinical reasoning applied as technical logic</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ───────── act III ───────── -->
+  <section class="act act--iii" data-act="3" aria-labelledby="act3-h">
+    <div class="wrap">
+      <p class="act__mark"><span>III</span> Capillary lumen <em>8.00&#8239;&times;&#8239;10<sup>&minus;6</sup>&#8239;m</em></p>
+
+      <h2 class="act__head" id="act3-h">And underneath every scale of it, a patient.</h2>
+
+      <div class="act__body">
+        <p>
+          As <strong>House Surgeon</strong> I have worked high-volume: intensive rotations in
+          <strong>Orthopaedics</strong>, and rural postings delivering primary care inside
+          health infrastructure that is critical and genuinely under-resourced.
+        </p>
+        <p>
+          Volume teaches pattern recognition faster than any other teacher. Rural posting
+          teaches something harder &mdash; what happens when the constraint is not the
+          diagnosis but the system around it. That is the point where leadership stops being
+          a title on a badge and becomes logistics, budgets and people.
+        </p>
+      </div>
+
+      <dl class="record">
+        <div><dt>Role</dt><dd>House Surgeon</dd></div>
+        <div><dt>Rotations</dt><dd>Orthopaedics &mdash; high volume</dd></div>
+        <div><dt>Postings</dt><dd>Rural &mdash; primary care delivery</dd></div>
+      </dl>
+
+      <figure class="plate plate--wide" data-plate="01">
+        <img src="assets/img/plate-01-clinical.jpg" alt="Dr. Akash Mehra in a white coat with a stethoscope." width="960" height="1280" loading="lazy" decoding="async">
+        <figcaption><span class="plate__no">Plate 01</span><span class="plate__desc">Clinical &mdash; white coat, stethoscope</span></figcaption>
+      </figure>
+
+      <h3 class="act__sub">Where the constraint is the system, the work is leadership.</h3>
+
+      <div class="act__body">
+        <p>
+          I served as <strong>Co-Convenor of the Indian Medical Association Student Network
+          (IMA MSN)</strong> through 2021&ndash;2022, driving student advocacy, professional
+          development and network coordination across the region. Alongside it I held office
+          as <strong>Batch Representative</strong> and on the <strong>Student Union Executive
+          Committee</strong>, leading the organisation of major institutional milestones: cross-functional
+          teams, logistics, and large-scale budgets that had to balance.
+        </p>
+      </div>
+
+      <dl class="record">
+        <div><dt>Office</dt><dd>Co-Convenor, IMA Student Network</dd></div>
+        <div><dt>Term</dt><dd>2021 &ndash; 2022</dd></div>
+        <div><dt>Remit</dt><dd>Advocacy &middot; professional development &middot; regional coordination</dd></div>
+        <div><dt>Also held</dt><dd>Batch Representative &middot; Student Union Executive Committee</dd></div>
+        <div><dt>Delivered</dt><dd>Institutional milestones &middot; cross-functional teams &middot; budgets</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ───────── dossier: the facts, plainly, in one place ───────── -->
+  <section class="dossier" aria-labelledby="dossier-h">
+    <div class="wrap">
+      <h2 class="dossier__head" id="dossier-h">The short version</h2>
+      <ol class="dossier__list">
+        <li>
+          <p class="dossier__mag">10<sup>10</sup>&#8239;m</p>
+          <h3>Advanced research &amp; space medicine</h3>
+          <p>Competitive summer internship at the Indian Space Lab, working on high-level scientific inquiry and complex research methodologies.</p>
+        </li>
+        <li>
+          <p class="dossier__mag">10<sup>&minus;4</sup>&#8239;m</p>
+          <h3>Technical adaptability &amp; innovation</h3>
+          <p>Avid programmer working at the software&ndash;hardware seam, with an active interest in drone technology and autonomous flight.</p>
+        </li>
+        <li>
+          <p class="dossier__mag">10<sup>&minus;6</sup>&#8239;m</p>
+          <h3>Clinical versatility</h3>
+          <p>House Surgeon. High-volume experience including intensive rotations in Orthopaedics, and primary care delivery across rural postings.</p>
+        </li>
+        <li>
+          <p class="dossier__mag">2021&ndash;22</p>
+          <h3>Healthcare leadership</h3>
+          <p>Co-Convenor, Indian Medical Association Student Network, driving student advocacy, professional development and regional network coordination.</p>
+        </li>
+        <li>
+          <p class="dossier__mag">&mdash;</p>
+          <h3>Project &amp; event management</h3>
+          <p>Batch Representative and Student Union Executive Committee Member, leading major institutional milestones: teams, logistics and large-scale budgets.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ───────── close ───────── -->
+  <section class="close" aria-labelledby="close-h">
+    <div class="wrap">
+      <figure class="plate plate--human" data-plate="04">
+        <img src="assets/img/plate-04-field.jpg" alt="Dr. Akash Mehra laughing with friends in a forest stream." width="1125" height="1500" loading="lazy" decoding="async">
+        <figcaption><span class="plate__no">Plate 04</span><span class="plate__desc">Field &mdash; with friends, somewhere with better water</span></figcaption>
+      </figure>
+
+      <h2 class="close__head" id="close-h">Twenty-five orders of magnitude, one habit: find the mechanism before you act on it.</h2>
+
+      <p class="close__body">
+        I am always open to connecting with fellow clinicians, tech innovators and global
+        professionals, particularly where clinical practice, research and engineering
+        have to meet and nobody has done the translation yet.
+      </p>
+
+      <ul class="contact">
+        <li><a class="contact__link" id="mailLink" href="#" data-u="singh.akash0717" data-d="gmail.com"><span class="contact__key">Email</span><span class="contact__val" id="mailText">singh.akash0717 [at] gmail.com</span></a></li>
+        <li><a class="contact__link" href="https://www.linkedin.com/in/akash-mehra" rel="me noopener"><span class="contact__key">LinkedIn</span><span class="contact__val">/in/akash-mehra</span></a></li>
+        <li><a class="contact__link" href="https://github.com/akash-mehra" rel="me noopener"><span class="contact__key">GitHub</span><span class="contact__val">@akash-mehra</span></a></li>
+      </ul>
+
+      <p class="colophon">
+        Built as a single continuous descent: one particle field, three configurations,
+        no scroll hijacking. Gravitational lensing is computed per pixel from the
+        Schwarzschild deflection; the accretion disc runs on Keplerian shear with relativistic
+        Doppler beaming. Everything degrades to a readable page without WebGL.
+      </p>
+    </div>
+  </section>
+</main>
+
+<script type="module" src="assets/js/main.js"></script>
+<noscript>
+  <style>.stage{display:none}.rail{display:none}body{background:#050507}</style>
+</noscript>
+</body>
+</html>
