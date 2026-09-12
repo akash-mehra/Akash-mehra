@@ -1,0 +1,50 @@
+# Publishes the site to GitHub Pages.
+#
+# There is no build step: the repository root is already the deployable site.
+# This workflow exists only to enable Pages and copy those files across, which
+# also gives the repo a real deployment history.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    # both names listed so renaming the default branch to main keeps working
+    branches:
+      - claude/keen-franklin-ru0sp3
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# never let two deploys race; queue instead of cancelling a live publish
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          # turns Pages on for this repository if it is not already enabled
+          enablement: true
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # the site is the repo root; the action excludes .git and .github
+          path: .
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
